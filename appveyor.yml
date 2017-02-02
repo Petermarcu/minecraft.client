@@ -11,7 +11,7 @@ build_script:
 
     ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.ps1') > $installScript)
 
-    & $installScript -InstallDir "$env:DOTNET_INSTALL_DIR" -Version 1.0.0-preview4-004233
+    & $installScript -InstallDir "$env:DOTNET_INSTALL_DIR" -Version 1.0.0-rc3-004530
 
     dotnet restore
 
